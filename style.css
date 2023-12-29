@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color: green;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.typing-container {
+    align-items: center;
+    font-size: xx-large;
+    display: inline-flex;
+}
+
+#typing-text {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 1s steps(2, start) infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
