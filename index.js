@@ -2,12 +2,15 @@ const text = "camillof.dev";
 const typingText = document.getElementById("typing-text");
 const typingSound = document.getElementById("typing-sound");
 let index = 0;
+let isWriting = false;
 
 async function typeText() {
+  isWriting = true;
   while (index < text.length) {
     await shuffleChar(index, text.charAt(index));
     index++;
   }
+  isWriting = false;
 
   typingSound.pause();
   typingSound.currentTime = 0;
@@ -45,7 +48,9 @@ function shuffleChar(position, actualChar) {
 }
 
 function startTypingSound() {
-  typingSound.play();
+  if (isWriting) {
+    typingSound.play();
+  }
 }
 
 window.onload = typeText;
