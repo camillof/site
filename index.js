@@ -4,8 +4,6 @@ const typingSound = document.getElementById("typing-sound");
 let index = 0;
 
 async function typeText() {
-  typingSound.play();
-
   while (index < text.length) {
     await shuffleChar(index, text.charAt(index));
     index++;
@@ -46,4 +44,9 @@ function shuffleChar(position, actualChar) {
   });
 }
 
+function startTypingSound() {
+  typingSound.play();
+}
+
 window.onload = typeText;
+window.addEventListener("click", startTypingSound, {once : true});
