@@ -1,29 +1,32 @@
-body, html {
-    height: 100%;
-    margin: 0;
-    background-color: black;
-    color: green;
-    font-family: 'Courier New', Courier, monospace;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+  color: green;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .typing-container {
-    align-items: center;
-    font-size: xx-large;
-    display: inline-flex;
+  align-items: center;
+  font-size: xx-large;
+  display: inline-flex;
+  /* flex-grow: 1; */
 }
 
 #typing-text {
-    margin: 0;
-    padding: 0;
-    white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
 }
 
 .cursor {
-    display: inline-block;
-    animation: blink 1s steps(2, start) infinite;
+  display: inline-block;
+  animation: blink 1s steps(2, start) infinite;
 }
 
 @keyframes blink {
