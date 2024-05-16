@@ -77,5 +77,9 @@ window.addEventListener("resize", () => {
   canvas.height = window.innerHeight;
 });
 
+window.addEventListener("click", (event) => {
+  particles.push(new Particle(event.clientX, event.clientY));
+});
+
 initParticles();
 animate();

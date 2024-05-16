@@ -23,7 +23,7 @@ canvas {
   align-items: center;
   font-size: xx-large;
   display: inline-flex;
-  /* flex-grow: 1; */
+  user-select: none;
 }
 
 #typing-text {
