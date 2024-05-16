@@ -17,13 +17,18 @@ canvas {
   top: 0;
   left: 0;
   z-index: -1;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 .typing-container {
   align-items: center;
-  font-size: xx-large;
+  font-size: 64px;
   display: inline-flex;
   user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 #typing-text {
@@ -51,7 +56,7 @@ canvas {
 
 .social-links a {
   color: #333;
-  font-size: 32px;
+  font-size: 48px;
   transition: color 0.3s;
 }
 

@@ -81,5 +81,14 @@ window.addEventListener("click", (event) => {
   particles.push(new Particle(event.clientX, event.clientY));
 });
 
+window.addEventListener("touchend", (event) => {
+  particles.push(
+    new Particle(
+      event.changedTouches[0].clientX,
+      event.changedTouches[0].clientY
+    )
+  );
+});
+
 initParticles();
 animate();
