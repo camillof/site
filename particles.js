@@ -5,7 +5,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const particles = [];
-const particleCount = 100;
+const particleCount = Math.floor((canvas.width * canvas.height) / 10000);
 const maxDistance = 100;
 
 class Particle {
