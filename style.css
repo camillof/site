@@ -55,15 +55,20 @@ canvas {
 }
 
 .social-links a {
-  color: #333;
   font-size: xx-large;
-  transition: color 0.3s;
 }
 
-.social-links a:hover {
-  color: #0077b5;
+.social-links a > svg {
+  width: 1.5em;
+  height: 1.5em;
+  fill: #333;
+  transition: fill 0.3s;
 }
 
-.social-links a:nth-child(2):hover {
-  color: #ffffff;
+.social-links a:hover > svg {
+  fill: #0077b5;
+}
+
+.social-links a:nth-child(2):hover > svg {
+  fill: #ffffff;
 }
