@@ -2,11 +2,48 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>camillof.dev</title>
-    <link rel="icon" href="assets/favicon.ico" />
+    <title>Camillo Facello</title>
+    <meta name="description" content="Full-stack software developer specializing in Rails and React, based in Uruguay." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Camillo Facello",
+      "jobTitle": "Software Developer",
+      "url": "https://camillof.dev",
+      "sameAs": [
+        "https://github.com/camillof",
+        "https://www.linkedin.com/in/camillo-facello"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "UY"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Wyeworks"
+      }
+    }
+    </script>
   </head>
   <body>
+    <noscript>
+      <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; padding: 2rem; text-align: center; background-color: #0a0a0a; color: #00ff00; font-family: 'Courier New', monospace;">
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Camillo Facello</h1>
+        <p style="font-size: 1.2rem; margin-bottom: 2rem; max-width: 600px;">
+          Full-stack developer specializing in Rails and React. Based in Uruguay, working at Wye.
+        </p>
+        <div style="display: flex; gap: 2rem; font-size: 1.1rem;">
+          <a href="https://github.com/camillof" target="_blank" style="color: #00ff00; text-decoration: underline;">GitHub</a>
+          <a href="https://www.linkedin.com/in/camillo-facello" target="_blank" style="color: #00ff00; text-decoration: underline;">LinkedIn</a>
+        </div>
+      </div>
+    </noscript>
+
     <canvas id="particles-canvas"></canvas>
     <div class="typing-container">
       <span id="typing-text"></span>
